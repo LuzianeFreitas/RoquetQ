@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #E0ECFF;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --Icons-details: #A5B0C1;
+
+    --gray-dark: #4D5E77;
+    --gray-blue: #A1B2CD;
+    --gray-light: #E5EAF1;
+
+    --hover-blue: #5699FF;
+    --hover-red: #EA4B65;
+
+    /* 1rem = 16px (User Agent) - 100% (User Agent)*/
+    font-size: 62.5%; /*10px mais fácil para converter*/
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: var(--background);
+}
+
+body,
+button,
+input,
+textarea {
+    /*Clamp -> intervalo de tamanho da fonte (minímo, padrão, máximo)*/
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Esconde uma tag visualmente, mas os leitores de tela ainda conseguem ler ela*/
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: 0;
+    border-width: 0;
+}
+
+button,
+input,
+.button {
+    height: 5rem;
+    border-radius: 0.8rem;
+}
+
+button, .button {
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+button:hover, .button:hover {
+    /* Cria uma luz sobre a cor ao passar o mouse */
+    filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+
+}
+
+.content header img{
+    width: 16.7rem;
+    
+}
