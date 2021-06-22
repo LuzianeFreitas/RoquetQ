@@ -53,6 +53,25 @@ input, button, .button {
     margin-bottom: 1.8rem;
 }
 
+/*Remover spin do input numerico*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    /* Remover cor da borda padrão do input, ao focar */
+    outline-offset: 0px;
+    outline: none;
+    border: 0.2rem solid var(--blue);
+}
+
 /* Separator Line */
 
 .separator {
