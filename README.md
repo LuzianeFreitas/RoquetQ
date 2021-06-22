@@ -33,4 +33,18 @@ Propriedade nova aprendida o <code>clamp()</code>: onde ele o determina interval
 Propriedade nova aprendida o <code>filter</code>: essa propriedade faz com que uma luz seja criada sobre o elemento quando o mouse passa sobre o mesmo, fazendo o efeito hover.
 </p>
 
+<h3>📌 Aula 2</h3>
 
+<p>
+Propriedade nova: <code>::placeholder</code> aprendi a dar estilo para o placeholder através do css aplicando da seguinte forma como no projeto:
+</p>
+
+<pre>
+textarea::placeholder {
+    color: var(--gray-blue);
+}
+</pre>
+
+<p>
+Site legalzinho para colocar figuras geométricas no layout [Bennett Feely](https://bennettfeely.com/)
+</p>
