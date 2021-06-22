@@ -48,3 +48,7 @@ textarea::placeholder {
 <p>
 Site legalzinho para colocar figuras geométricas no layout [Bennett Feely](https://bennettfeely.com/)
 </p>
+
+<p>
+Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras nos elementos em que é aplicada.
+</p>
