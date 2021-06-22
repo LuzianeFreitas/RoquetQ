@@ -125,6 +125,12 @@
     justify-content: flex-end;
 }
 
+#questions .actions a {
+    color: var(--gray-dark);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.2rem;
+}
+
 #questions .actions .check,
 #questions .actions .delete {
     display: flex;
