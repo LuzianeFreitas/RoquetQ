@@ -36,6 +36,10 @@ main .container {
     width: min(36.3rem, 100%);
 }
 
+main .container.create-pass {
+    margin-bottom: 14rem;
+}
+
 main h2 {
     font-family: 'Poppins', sans-serif;
     color: var(--black);
