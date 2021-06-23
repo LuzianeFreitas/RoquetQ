@@ -7,6 +7,8 @@
     O projeto RoquetQ foi pensando em você que gosta de responder e tirar dúvidas, nele você tem a opção de criar salas para perguntas e respostas ou entrar em uma já criada. Agora é com você crie sua sala e se divirta com seus amigos!!
 </p>
 
+<h2>Súmario</h2>
+
 <h2>📌 Aplicação</h2>
 
 <img src="home.svg">

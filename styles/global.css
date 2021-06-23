@@ -19,9 +19,7 @@ html {
     --gray-dark: #4D5E77;
     --gray-blue: #A1B2CD;
     --gray-light: #E5EAF1;
-
-    --hover-blue: #5699FF;
-    --hover-red: #EA4B65;
+    --gray-medium: #eaecf1;
 
     /* 1rem = 16px (User Agent) - 100% (User Agent)*/
     font-size: 62.5%; /*10px mais fácil para converter*/
@@ -101,6 +99,20 @@ button.outlined,
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.gray,
+.button.gray {
+    background: var(--gray-light);
+    color: var(--gray-dark);
+}
+
+/*** HEADER***/
 
 .content header {
     width: 80%;
