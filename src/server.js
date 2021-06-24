@@ -11,6 +11,8 @@ server.use(express.static('public'))
 /**Caminho da pasta views */
 server.set('views', path.join(__dirname, 'views'));
 
+/**midler */
+server.use(express.urlencoded({extended: true}));
 server.use(route);
 
 server.listen(3000, () => {
