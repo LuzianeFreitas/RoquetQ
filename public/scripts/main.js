@@ -7,9 +7,21 @@ const modal = Modal()
 const checkButtons = document.querySelectorAll('.actions a.check')
 
 checkButtons.forEach(button => {
-    
+
     button.addEventListener('click', event => {
         // Abrir modal
+        modal.open()
+    })
+});
+
+
+/**Quando o botão delete for clicado abre o modal */
+const deleteButton = document.querySelectorAll('.actions a.delete')
+
+deleteButton.forEach(button => {
+
+    button.addEventListener('click', event => {
+        // fechar modal
         modal.open()
     })
 });
