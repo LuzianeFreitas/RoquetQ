@@ -21,8 +21,8 @@ module.exports = {
             /**some verifica a condição passada e se ela existir retorna um true */
             isRoom = roomsExistIds.some(roomExistId => roomExistId === roomId)
 
-            if(!roomsExistIds){
-                    /**Insere a sala no banco */
+            if(!isRoom){
+                /**Insere a sala no banco */
                 await db.run(`INSERT INTO rooms (
                     id,
                     pass
@@ -36,5 +36,10 @@ module.exports = {
         await db.close()
 
         res.redirect(`/room/${roomId}`)
+    },
+
+    open(req, res){
+        const roomId = req.params.room
+        res.render('room', { roomId: roomId })
     }
 }
