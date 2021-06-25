@@ -1,25 +1,39 @@
 <img src="Thumbnail_NLW_Missao-5.png">
 <h1 align="center"> RoquetQ </h1>
-<p>
+<p align="center">
     Projeto em desenvolvimento durante a semana #NLWTOGETHER na trilha DISCOVER.
 </p>
-<p>
-    O projeto RoquetQ foi pensando em você que gosta de responder e tirar dúvidas, nele você tem a opção de criar salas para perguntas e respostas ou entrar em uma já criada. Agora é com você crie sua sala e se divirta com seus amigos!!
-</p>
 
-<h2>Súmario</h2>
-
-<h2>📌 Aplicação</h2>
 
 <img src="home.svg">
 
-<h2>🛠️ Ferramentas de desenvolvimento</h2>
+<h2>📋 Sumário</h2>
 
-- Node + NPM
-- Beekeeper Studio
-- Visual Studio Code
+- [Sobre](#id00)
+- [Tecnologias](#id01)
+- [Layout](#id02)
+- [Aprendizado](#id03)
+- [Licença](#id04)
 
-<h2>📚 Aprendizado</h2>
+
+<h2>📖 Sobre <a name="id00"></a></h2>
+O Rocket.Q é uma aplicação de interação através de perguntas, sendo possível criar uma sala para internautas anônimos fazerem perguntas e o criador da sala em posse de uma senha gerenciar essas perguntas e marcar como lidas.
+
+
+<h2>🚀 Tecnologias <a name="id01"></a></h2>
+
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- EJS
+- Express
+- SQLite
+
+<h2>🔖 Layout <a name="id02"></a></h2>
+Você pode visualizar o layout do projeto através desse <a href="https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q-%2302?node-id=0%3A1">link</a>. É necessário ter conta no <a href="https://www.figma.com/?fuid=">Figma</a> para acessá-lo.
+
+<h2>📚 Aprendizado <a name="id03"></a></h2>
 
 <h3>📌 Aula 1</h3>
 
@@ -48,9 +62,15 @@ textarea::placeholder {
 </pre>
 
 <p>
-Site legalzinho para colocar figuras geométricas no layout [Bennett Feely](https://bennettfeely.com/)
+    Site legalzinho para colocar figuras geométricas no layout <a href="https://bennettfeely.com/">Bennett Feely</a>
 </p>
 
 <p>
 Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras nos elementos em que é aplicada.
 </p>
+
+<h2>📝 Licença <a name="id04"></a></h2>
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE]() para mais detalhes.
+
+---
