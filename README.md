@@ -13,7 +13,8 @@
 - [Tecnologias](#id01)
 - [Layout](#id02)
 - [Aprendizado](#id03)
-- [Licença](#id04)
+- [Milha Extra](#id04)
+- [Licença](#id05)
 
 
 <h2>📖 Sobre <a name="id00"></a></h2>
@@ -69,7 +70,19 @@ textarea::placeholder {
 Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras nos elementos em que é aplicada.
 </p>
 
-<h2>📝 Licença <a name="id04"></a></h2>
+<h3>📌 Aula 3</h3>
+
+<h3>📌 Aula 4</h3>
+
+<h3>📌 Aula 5</h3>
+
+<h2>⚙️ Milha Extra <a name="id04"></a></h2>
+
+- [ ] Responsividade;
+- [ ] Refazer o alert de senha errada;
+- [ ] Dark Mode.
+
+<h2>📝 Licença <a name="id05"></a></h2>
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
