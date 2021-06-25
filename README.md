@@ -71,6 +71,6 @@ Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras n
 
 <h2>📝 Licença <a name="id04"></a></h2>
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE]() para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
