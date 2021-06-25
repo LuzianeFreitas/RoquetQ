@@ -59,85 +59,47 @@
             <section id="questions">
                 <h2 class="sr-only">Perguntas da comunidade</h2>
                 <div class="questions">
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
-                                <img src="/images/avatar.svg" alt="Avatar">
+                    <% questions.forEach(question => { %> 
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/images/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p><%= question.title %> </p>
+                                </div>
                             </div>
-                            <div class="question">
-                                <p>Qual a diferença entre const, var e let no Javascript?</p>
+                            <div class="actions">
+                                <a href="#" class="check" data-id="<%= question.id %>">
+                                    <img src="/images/check.svg" alt="Marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete" data-id="<%= question.id %>">
+                                    <img src="/images/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
                             </div>
                         </div>
-                        <div class="actions">
-                            <a href="#" class="check" data-id="2">
-                                <img src="/images/check.svg" alt="Marcar como lida">
-                                Marcar como lida
-                            </a>
-                            <a href="#" class="delete">
-                                <img src="/images/trash.svg" alt="Excluir">
-                                Excluir
-                            </a>
-                        </div>
-                    </div>
+                    <% }); %> 
 
-                    <!-- <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
-                                <img src="images/avatar.svg" alt="Avatar">
+                    <% questionsRead.forEach(questionRead => { %>
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/images/avatar.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p><%= questionRead.title %></p>
+                                </div>
                             </div>
-                            <div class="question">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quo expedita consequuntur exercitationem temporibus cum itaque, odio dignissimos distinctio culpa molestias provident maxime voluptate eaque rerum quam non corrupti? Doloribus!</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="check">
-                                <img src="images/check.svg" alt="Marcar como lida">
-                                Marcar como lida
-                            </a>
-                            <a href="#" class="delete">
-                                <img src="images/trash.svg" alt="Excluir">
-                                Excluir
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="question-wrapper">
-                        <div class="question-content">
-                            <div class="user">
-                                <img src="images/avatar.svg" alt="Avatar">
-                            </div>
-                            <div class="question">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quo expedita consequuntur exercitationem temporibus cum itaque, odio dignissimos distinctio culpa molestias provident maxime voluptate eaque rerum quam non corrupti? Doloribus!</p>
+                            <div class="actions">
+                                <a href="#" class="delete" data-id="<%= questionRead.id %>">
+                                    <img src="/images/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
                             </div>
                         </div>
-                        <div class="actions">
-                            <a href="#" class="check">
-                                <img src="images/check.svg" alt="Marcar como lida">
-                                Marcar como lida
-                            </a>
-                            <a href="#" class="delete">
-                                <img src="images/trash.svg" alt="Excluir">
-                                Excluir
-                            </a>
-                        </div>
-                    </div> -->
-
-                    <div class="question-wrapper read">
-                        <div class="question-content">
-                            <div class="user">
-                                <img src="/images/avatar.svg" alt="Avatar">
-                            </div>
-                            <div class="question">
-                                <p>Qual a diferença entre const, var e let no Javascript?</p>
-                            </div>
-                        </div>
-                        <div class="actions">
-                            <a href="#" class="delete" data-id="1">
-                                <img src="/images/trash.svg" alt="Excluir">
-                                Excluir
-                            </a>
-                        </div>
-                    </div>
+                    <% }); %> 
                 </div>
             </section>
         </main>
