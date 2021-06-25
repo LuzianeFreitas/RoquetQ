@@ -46,5 +46,11 @@ module.exports = {
         const questionsRead = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 1`)
 
         res.render('room', { roomId: roomId,  questions: questions, questionsRead: questionsRead})
+    },
+
+    enter(req, res){
+        const roomId = req.body.roomId;
+        
+        res.redirect(`/room/${roomId}`);
     }
 }
