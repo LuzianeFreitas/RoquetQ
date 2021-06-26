@@ -25,6 +25,22 @@ html {
     font-size: 62.5%; /*10px mais fácil para converter*/
 }
 
+html.dark-mode {
+    --black: #C291F2;
+    --white: #FAFAFA;
+    --red: #9C1A30;
+    --light-blue: #4C0D8C;
+    --blue: #9933FF;
+    --background: #1F0835;
+    --overlay: #220440;
+    --Icons-details: #825EA6;
+
+    --gray-dark: #9A75BF;
+    --gray-blue: #BD86F4;
+    --gray-light: #D1C1E1;
+    --gray-medium: #9935FC;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -39,6 +55,13 @@ textarea {
     font-size: clamp(14px, 1.6rem, 2vw);
     font-family: 'Open Sans', sans-serif;
 }
+
+
+input[type="checkbox"] {
+    width: 2rem;
+    cursor: pointer;
+}
+
 
 .content {
     width: 100%;
@@ -65,7 +88,9 @@ input,
     border-radius: 0.8rem;
 }
 
-button, .button {
+
+button, 
+.button {
     font-family: 'Poppins';
     font-weight: 500;
     line-height: 0;
@@ -96,6 +121,12 @@ button > img,
 button.outlined,
 .button.outlined {
     background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+.button.dark-mode-btn{
+    background: transparent;
     color: var(--blue);
     border: .2rem solid var(--blue);
 }

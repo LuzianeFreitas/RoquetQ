@@ -10,8 +10,13 @@
     'left right';
 }
 
+
 header {
     grid-area: header;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #bg {
@@ -20,7 +25,14 @@ header {
     /* top/contain -> a imagem ficara no topo e se encaixara na div em que ela está */
     background: url('/images/home-bg-img.svg') no-repeat top/contain;
     background-position-x: -5rem;
+}
 
+#bg.dark-mode-img {
+    grid-area: left;
+
+    /* top/contain -> a imagem ficara no topo e se encaixara na div em que ela está */
+    background: url('/images/home-bg-img-dark.svg') no-repeat top/contain;
+    background-position-x: -5rem;
 }
 
 main {
@@ -47,14 +59,20 @@ main h2 {
     margin-bottom: 2.4rem;
 }
 
+
 input {
     border: 0.2rem solid var(--gray-blue);
     padding: 0 1.6rem;
+    background: transparent;
 }
 
 input, button, .button {
     width: 100%;
     margin-bottom: 1.8rem;
+}
+
+form input.dark-mode-color {
+    color: var(--white);
 }
 
 /*Remover spin do input numerico*/
@@ -75,6 +93,7 @@ input:focus {
     outline: none;
     border: 0.2rem solid var(--blue);
 }
+
 
 /* Separator Line */
 
@@ -140,7 +159,10 @@ input:focus {
 
     header {
         grid-area: header;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
         padding-bottom: 3.2rem;
     }
 
