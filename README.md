@@ -79,8 +79,9 @@ Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras n
 <h2>⚙️ Milha Extra <a name="id04"></a></h2>
 
 - [x] Responsividade;
+- [x] Dark Mode.
 - [ ] Refazer o alert de senha errada;
-- [ ] Dark Mode.
+
 
 <h2>📝 Licença <a name="id05"></a></h2>
 
