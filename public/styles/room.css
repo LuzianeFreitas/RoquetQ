@@ -34,6 +34,10 @@
     height: 2rem;
 }
 
+#room header input {
+    margin-left: 1rem;
+}
+
 /*Question form*/
 #room main #questions {
     padding-bottom: 3.2rem;
@@ -62,6 +66,10 @@
     outline: none;
 
     width: 100%;
+}
+
+#question-form form textarea.dark-mode-color {
+    color: var(--white);
 }
 
 #question-form form textarea::placeholder {
@@ -124,6 +132,7 @@
     display: flex;
     align-items: center;
     min-height: 5.2rem;
+    color: var(--black);
 }
 
 .question-wrapper .actions {
@@ -167,6 +176,7 @@
 }
 
 .no-questions p{
+    color: var(--black);
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
@@ -178,6 +188,7 @@
     font-weight: 400;
     margin-top: 1.3rem;
     line-height: 1.9rem;
+    color: var(--gray-dark);
 }
 
 

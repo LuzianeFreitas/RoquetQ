@@ -37,8 +37,8 @@ html.dark-mode {
 
     --gray-dark: #9A75BF;
     --gray-blue: #BD86F4;
-    --gray-light: #D1C1E1;
-    --gray-medium: #9935FC;
+    --gray-medium: #D1C1E1;
+    --gray-light: #9935FC;
 }
 
 body {
@@ -121,6 +121,12 @@ button > img,
 button.outlined,
 .button.outlined {
     background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+.button.outlined.dark-mode-copy {
+    background: transparent;
     color: var(--blue);
     border: .2rem solid var(--blue);
 }
