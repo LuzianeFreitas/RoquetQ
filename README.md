@@ -33,6 +33,8 @@ O Rocket.Q é uma aplicação de interação através de perguntas, sendo possí
 
 <h2>🔖 Layout <a name="id02"></a></h2>
 Você pode visualizar o layout do projeto através desse <a href="https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q-%2302?node-id=0%3A1">link</a>. É necessário ter conta no <a href="https://www.figma.com/?fuid=">Figma</a> para acessá-lo.
+<br>
+Ah eu fiz o Tema dark então caso queira ter uma inspiração fique a vontade para acessá-lo <a href="https://www.figma.com/file/5kfbim8MXD7fr8grg2zuXb/Roquet.q-%2302-Dark?node-id=0%3A1">Dark Theme</a>
 
 <h2>📚 Aprendizado <a name="id03"></a></h2>
 
