@@ -178,6 +178,42 @@
 }
 
 
+/* Responsividade */
+
+@media (max-width: 660px) {
+    #room header {
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr;   
+        
+        grid-template-areas: 
+        'logo'
+        'buttons-1';
+    }
+
+    #room header a {
+        grid-area: logo;
+    }
+    
+    #room header .buttons {
+        grid-area: buttons-1;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.2rem;
+    }
+    
+    #room header .buttons .button:nth-child(2) {
+        padding: 1rem 2rem;
+    }
+    
+    .no-questions {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
 
 
 

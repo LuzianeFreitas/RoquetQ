@@ -64,3 +64,21 @@
 .modal-wrapper .modal .buttons > .button {
     padding: 1.3rem 3.2rem;
 } 
+
+
+/* Responsividade */
+@media (max-width: 660px) {
+    .modal-wrapper .modal {
+        width: min(40rem, 100%);  
+        padding: 1.2rem;
+    }
+
+    .modal-wrapper .modal .buttons {
+        display: grid;
+        text-align: center;
+    }
+
+    .modal-wrapper .modal .buttons > button {
+        margin-top: 2.3rem;
+    }
+}

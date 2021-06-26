@@ -106,6 +106,7 @@ input:focus {
     background: var(--light-blue);
     position: fixed;
     clip-path: circle(50% at 50% 50%);
+    z-index: -1;
 }
 
 .ball.top {
@@ -119,4 +120,54 @@ input:focus {
 .ball.bottom {
     bottom: -15rem;
     right: 5.6rem;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 860px) {
+    .content {
+        display: grid;
+        /* A soma das porcentagens da coluna tem sempre que dar 100% */
+        /* Foi dividido em duas colunas */
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr;   
+        
+        grid-template-areas: 
+        'header'
+        'conteudo';
+    }
+
+    header {
+        grid-area: header;
+        text-align: center;
+        padding-bottom: 3.2rem;
+    }
+
+    main {
+        grid-area: conteudo;  
+    }
+
+    main .container {
+        /* min(minimo máximo) da largura sempre dando preferência para o mínimo */
+        width: min(36.3rem, 100%);
+
+        margin: 0 auto;  
+    }
+
+    main .container.create-pass {
+        margin-bottom: 60rem;
+    }
+}
+
+
+@media (max-width: 660px) {
+    main .container {
+        /* min(minimo máximo) da largura sempre dando preferência para o mínimo */
+        width: min(30rem, 100%);
+    }
+
+    main .container.create-pass {
+        margin-bottom: 60rem;
+    }
 }
