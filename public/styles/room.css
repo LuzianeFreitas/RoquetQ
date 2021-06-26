@@ -35,6 +35,9 @@
 }
 
 /*Question form*/
+#room main #questions {
+    padding-bottom: 3.2rem;
+}
 
 #question-form h2 {
     font-family: 'Poppins', sans-serif;
