@@ -19,7 +19,7 @@
 
 .modal-wrapper .modal {
     width: min(59rem, 90%);
-    background: var(--white);
+    background: var(--background);
 
     margin: auto;
 
@@ -48,6 +48,7 @@
     border: .2rem solid var(--blue);
     outline: none;
     width: min(70%, 30.2rem);
+    background: transparent;
 }
 
 .modal-wrapper .modal .buttons {
