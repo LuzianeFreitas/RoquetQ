@@ -82,6 +82,7 @@ Propriedade nova: <code>filter: drop-shadow()</code> ela permite criar sombras n
 
 - [x] Responsividade;
 - [x] Dark Mode.
+- [x] Dark Mode Save (deixa o estado salvo).
 - [ ] Refazer o alert de senha errada;
 
 
