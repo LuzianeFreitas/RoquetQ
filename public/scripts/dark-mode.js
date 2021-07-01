@@ -13,8 +13,14 @@ const btnCopy = document.querySelector('div .buttons .button.outlined');
 const btnCopyImg = document.querySelector('div .buttons .button.outlined img')
 const noQuestion = document.querySelector('.no-questions img');
 
+// const modal =  document.querySelector('.modal-wrapper.active');
+// const inputModal = document.querySelector('.modal input#password');
+
+console.log(modal);
+
 const idHome = document.getElementById('home');
 const idRoom = document.getElementById('room');
+
 
 if (darkModeStorage) {
     // ativa o dark mode
@@ -47,7 +53,7 @@ if (darkModeStorage) {
   
     // já deixa o input marcado como ativo
     checkBox.checked = true
-}
+} 
 
 checkBox.addEventListener('click', function(){
     html.classList.toggle('dark-mode');
@@ -65,16 +71,16 @@ checkBox.addEventListener('click', function(){
             localStorage.setItem('darkModeSave', true)
             return
         }else{
+            localStorage.removeItem('darkModeSave')
             logo.src = "/images/logo.svg"
+            bg.classList.toggle('dark-mode-img')
             colorInputFont.classList.remove('dark-mode-color');
             if(btn != null) {
                 iconBtn.src = "/images/users.svg";
                 btn.classList.remove('dark-mode-btn');
             }
-            
-            
         }
-        localStorage.removeItem('darkModeSave')
+        
 
     } else if(idRoom) {
         if(html.classList.contains('dark-mode')) {
@@ -85,20 +91,31 @@ checkBox.addEventListener('click', function(){
             if(noQuestion != null) {
                 noQuestion.src = "/images/no-questions-dark.svg";
             }
+
+            
+
+            // if(html.classList.contains('.modal-wrapper.active')) {
+            //     console.log(inputModal);
+            //     inputModal.classList.add('color-font-dark');
+            // }
                 
+
             localStorage.setItem('darkModeSave', true)
             return
         }else{
+            localStorage.removeItem('darkModeSave')
             logo.src = "/images/logo.svg";
             btnCopy.classList.remove('dark-mode-copy');
             btnCopyImg.src = "/images/copy.svg"
             colorTextAreaFont.classList.remove('dark-mode-color');
             if(noQuestion != null) {
                 noQuestion.src = "/images/no-questions.svg";
-            }
+            } 
+            // if(html.classList.contains('.modal-wrapper.active')) {
+            //     inputModal.classList.remove('color-font-dark');
+            // }
                 
-            
         }
-        localStorage.removeItem('darkModeSave')
+        
     }
 });

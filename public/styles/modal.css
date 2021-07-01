@@ -51,6 +51,10 @@
     background: transparent;
 }
 
+.modal-wrapper .modal input.color-font-dark {
+    color: var(--white);
+}
+
 .modal-wrapper .modal .buttons {
     display: flex;
     align-items: center;
